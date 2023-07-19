@@ -12,6 +12,8 @@ import 'package:provider_flutter/home_screen.dart';
 import 'package:provider_flutter/provider.dart';
 import 'package:provider_flutter/stateful_widget.dart';
 
+import 'Providerrr/value_notify_listener.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -45,7 +47,7 @@ class MyApp extends StatelessWidget {
                   backgroundColor: Colors.teal,
                 ),
                 brightness: Brightness.dark),
-            home: const DarkTheme(),
+            home:  NotifyListenerScreen(),
           );
         }));
   }
