@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:provider_flutter/Providerrr/auth_provider.dart';
 import 'package:provider_flutter/Providerrr/count_foundation.dart';
 import 'package:provider_flutter/Providerrr/example_two_provider.dart';
 import 'package:provider_flutter/Providerrr/favourite_provider/favorite_provider.dart';
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
           ChangeNotifierProvider(create: (_) => ExampleTwoProvider()),
           ChangeNotifierProvider(create: (_) => FavouriteProvider()),
           ChangeNotifierProvider(create: (_) => ThemeChangerProvider()),
+          ChangeNotifierProvider(create: (_) => AuthProvider()),
         ],
         child: Builder(builder: (context) {
           final themeChanger = Provider.of<ThemeChangerProvider>(context);
