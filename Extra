@@ -1,3 +1,0 @@
-class Java{
-System.out.print("Creating pull request");
-}
